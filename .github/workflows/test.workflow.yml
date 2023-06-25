@@ -54,16 +54,13 @@ jobs:
           cd ..
           ls -la
           
+          echo $PWD
           #echo ".credentials"
           #cat .credentials
           
           #echo ".credentials_rsaparams"
           #cat .credentials_rsaparams
-          
-          cd ..
-          echo $PWD
-          ls -la
-          
+                    
           cd runners
           ls -la
           echo "--------------------------"
