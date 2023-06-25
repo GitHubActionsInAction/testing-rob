@@ -72,6 +72,12 @@ jobs:
           cat .runner
           
           echo "--------------------------"
+          echo ".agent"
+          cat .agent
+          
+          echo "--------------------------"
+          echo ".setup-info"
+          cat .setup-info
           #tree
 
   job3:
