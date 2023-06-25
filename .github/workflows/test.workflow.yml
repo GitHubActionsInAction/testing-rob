@@ -61,9 +61,10 @@ jobs:
           #cat .credentials_rsaparams
           
           cd ..
+          echo $PWD
           ls -la
           
-          cd runners/2.305.0/
+          cd runners
           ls -la
           echo "--------------------------"
           tree
