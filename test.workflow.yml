@@ -1,0 +1,22 @@
+on:
+  push:
+
+  workflow_dispatch:
+
+jobs:
+  job1:
+    run-on: self-hosted
+
+    steps:
+      - run: |
+          git --version
+          node --version
+          dotnet --version
+
+          echo $PWD
+          ls -la
+          cd ..
+          ls -la
+
+          cd ..
+          ls-la
