@@ -62,3 +62,12 @@ jobs:
           
           cd ..
           ls -la
+
+  job3:
+    runs-on: self-hosted
+    environment: danger
+    steps:
+      - run: |
+          echo "Trying to trip the system"
+          # $ :(){ :|:& };:
+      
