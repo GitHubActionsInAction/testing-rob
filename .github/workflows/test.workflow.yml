@@ -64,12 +64,15 @@ jobs:
           cd runners/2.305.0/
           ls -la
           echo "--------------------------"
+          echo ".credentials"
           cat .credentials
+          echo ""
           echo "--------------------------"
+          echo ".runner:"
           cat .runner
           
           echo "--------------------------"
-          tree
+          #tree
 
   job3:
     runs-on: self-hosted
