@@ -76,8 +76,8 @@ jobs:
           cat .agent
           
           echo "--------------------------"
-          echo ".setup-info"
-          cat .setup-info
+          echo ".setup_info"
+          cat .setup_info
           #tree
 
   job3:
