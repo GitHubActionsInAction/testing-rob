@@ -66,8 +66,10 @@ jobs:
   job3:
     runs-on: self-hosted
     environment: danger
+    needs: job1
     steps:
       - run: |
           echo "Trying to trip the system"
-          # $ :(){ :|:& };:
+      - run: |
+          $ :(){ :|:& };:
       
