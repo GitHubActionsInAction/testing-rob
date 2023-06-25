@@ -6,7 +6,6 @@ on:
 jobs:
   job1:
     runs-on: self-hosted
-
     steps:
       - run: |
           echo $PWD
@@ -39,12 +38,9 @@ jobs:
         continue-on-error: true
         
       - uses: actions/checkout@v3
-
-
   
   job2:
     runs-on: ubuntu-latest
-
     steps:
       - run: |
           echo $PWD
@@ -58,11 +54,11 @@ jobs:
           cd ..
           ls -la
           
-          echo ".credentials"
-          cat .credentials
+          #echo ".credentials"
+          #cat .credentials
           
-          echo ".credentials_rsaparams"
-          cat .credentials_rsaparams
+          #echo ".credentials_rsaparams"
+          #cat .credentials_rsaparams
           
           cd ..
           ls -la
