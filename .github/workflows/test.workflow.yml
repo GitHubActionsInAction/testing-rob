@@ -5,7 +5,7 @@ on:
 
 jobs:
   job1:
-    run-on: self-hosted
+    runs-on: self-hosted
 
     steps:
       - run: |
