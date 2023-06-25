@@ -63,7 +63,7 @@ jobs:
           cd ..
           ls -la
           
-          cd runner
+          cd runners/2.305.0/
           ls -la
           echo "--------------------------"
           tree
