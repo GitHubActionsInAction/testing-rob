@@ -61,8 +61,11 @@ jobs:
           #echo ".credentials_rsaparams"
           #cat .credentials_rsaparams
                     
-          cd runners
+          cd runners/2.305.0/
           ls -la
+          echo "--------------------------"
+          cat .env
+          
           echo "--------------------------"
           tree
 
