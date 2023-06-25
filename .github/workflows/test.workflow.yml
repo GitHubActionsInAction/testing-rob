@@ -9,10 +9,6 @@ jobs:
 
     steps:
       - run: |
-          git --version
-          node --version
-          dotnet --version
-
           echo $PWD
           ls -la
           cd ..
@@ -20,3 +16,12 @@ jobs:
 
           cd ..
           ls-la
+      
+      - run: git --version
+        continue-on-error: true
+        
+      - run: node --version
+        continue-on-error: true
+        
+      - run: dotnet --version
+        continue-on-error: true
