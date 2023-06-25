@@ -64,7 +64,9 @@ jobs:
           cd runners/2.305.0/
           ls -la
           echo "--------------------------"
-          cat .env
+          cat .credentials
+          echo "--------------------------"
+          cat .runner
           
           echo "--------------------------"
           tree
