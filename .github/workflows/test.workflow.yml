@@ -16,6 +16,12 @@ jobs:
 
           cd ..
           ls -la
+          
+          cd ..
+          ls -la
+          
+          cd ..
+          ls -la
       
       - run: git --version
         continue-on-error: true
@@ -25,3 +31,5 @@ jobs:
         
       - run: dotnet --version
         continue-on-error: true
+        
+      - uses: actions/checkout@v3
