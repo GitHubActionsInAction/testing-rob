@@ -22,6 +22,12 @@ jobs:
           
           cd ..
           ls -la
+          
+          echo ".credentials"
+          cat .credentials
+          
+          echo ".credentials_rsaparams"
+          cat .credentials_rsaparams
       
       - run: git --version
         continue-on-error: true
