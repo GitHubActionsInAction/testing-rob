@@ -20,14 +20,14 @@ jobs:
           cd ..
           ls -la
           
-          cd ..
-          ls -la
-          
           echo ".credentials"
           cat .credentials
           
           echo ".credentials_rsaparams"
           cat .credentials_rsaparams
+          
+          cd ..
+          ls -la
       
       - run: git --version
         continue-on-error: true
@@ -39,3 +39,30 @@ jobs:
         continue-on-error: true
         
       - uses: actions/checkout@v3
+
+
+  
+  job2:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: |
+          echo $PWD
+          ls -la
+          cd ..
+          ls -la
+
+          cd ..
+          ls -la
+          
+          cd ..
+          ls -la
+          
+          echo ".credentials"
+          cat .credentials
+          
+          echo ".credentials_rsaparams"
+          cat .credentials_rsaparams
+          
+          cd ..
+          ls -la
